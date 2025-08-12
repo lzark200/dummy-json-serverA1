@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
+app.use(cors())
+
+
 const PORT = 8002;
 
 app.get('/dummy-data-a101', (req, res) => {
