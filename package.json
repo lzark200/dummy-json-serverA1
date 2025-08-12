@@ -1,0 +1,22 @@
+{
+  "name": "dummy-json-servera1",
+  "version": "1.0.0",
+  "description": "This is the dummy server used to serve dummy data over the internet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzark200/dummy-json-serverA1.git"
+  },
+  "author": "lzark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzark200/dummy-json-serverA1/issues"
+  },
+  "homepage": "https://github.com/lzark200/dummy-json-serverA1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
