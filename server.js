@@ -6,9 +6,7 @@ app.use(cors())
 
 const PORT = 8002;
 
-app.get('/dummy-data-a101', (req, res) => {
-    res.status(200).send(
-        [{ "title": "Skiba", "description": "67240 Southridge Terrace", "id": 1 },
+const todo =  [{ "title": "Skiba", "description": "67240 Southridge Terrace", "id": 1 },
         { "title": "Feedmix", "description": "50781 Forster Lane", "id": 2 },
         { "title": "Kazio", "description": "07 Sycamore Junction", "id": 3 },
         { "title": "Vipe", "description": "23840 Prairieview Court", "id": 4 },
@@ -1008,6 +1006,17 @@ app.get('/dummy-data-a101', (req, res) => {
         { "title": "Kwideo", "description": "2896 Parkside Place", "id": 998 },
         { "title": "Skipstorm", "description": "8302 Grayhawk Lane", "id": 999 },
         { "title": "Brainlounge", "description": "692 Memorial Trail", "id": 1000 }]
+
+app.get('/dummy-data-a101', (req, res) => {
+    res.status(200).send(
+       todo
+    )
+})
+
+app.get('/dummy-data-a101/:id' , (req , res)=>{
+    const id = parseInt(req.params.id) ; 
+    res.status(200).send(
+        todo[id-1] , 
     )
 })
 
